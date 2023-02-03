@@ -1,0 +1,1 @@
+function generaRandoms(){let e=paginas.length,n=[];for(let l=0;n.length<4;l++){let t=Math.floor(Math.random()*(+e-0))+0;n.includes(t)||n.push(t)}return n}
