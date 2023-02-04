@@ -11,7 +11,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" preload href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/minStyle.css">
 </head>
 
@@ -50,13 +50,28 @@
     </header>
 
     <main class="w-100 d-flex flex-column align-items-center">
-        <div class="contenedor-img py-5">
+        <div class="contenedor-img d-flex align-items-center">
             <div class="py-4 px-5 text-center d-md-flex justify-content-center align-items-center mx-auto">
-                <img src="img/Perfil.jpg" class="img-fluid d-block w-50 mx-auto my-3" width="500" height="300" alt="imagen propietario">
-                <div class="">
-                    <p class="section__subtitle fs-4 fw-bold">Hola, me llamo</p>
-                    <h1 class="section__tittle fs-1 fw-bold">Fernando de la Cruz Ramos <span
-                            class="section__rol d-block">(Front End Developer)</span></h1>
+                <img src="img/personaProgramando.svg" class="img-fluid d-block w-50 mx-auto my-3" width="500" height="300" alt="imagen propietario">
+                <div class="title__container">
+
+                    
+                    <h1 class="section__tittle fw-bold">
+                        <span class="typed"></span>
+                    </h1>
+
+                    <div id="cadenas-texto">
+                        <p>
+                            <span class="section__subtitle fw-bold">Hola, me llamo</span>
+                            Fernando de la Cruz Ramos 
+                            <span class="section__rol d-block">(Front End Developer)</span>
+                        </p>
+                        <p>
+                            <span class="section__subtitle fw-bold">Hola, me llamo</span>
+                            Fernando de la Cruz Ramos 
+                            <span class="section__rol d-block">(Estudiante de Ingeniería)</span>
+                        </p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -125,7 +140,7 @@
     <section class="skills py-5">
         <div class="container-lg icons">
             <div id="habilidades" class="row">
-                <h2 class="text-center fs-1 fw-bold">Habilidades</h2>
+                <h2 class="text-center fs-1 fw-bold">Conocimientos</h2>
                 <div class="col-6 col-md-4 mb-3">
                     <div class="icon__container">
                         <div class="icon">
@@ -259,6 +274,7 @@
 
     <script async src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
     <script async type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script async src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
     <script src="js/minDB.js"></script>
     <script src="js/minGeneraRandoms.js"></script>
     <script src="js/minApp.js"></script>
